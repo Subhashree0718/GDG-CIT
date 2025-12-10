@@ -1,0 +1,72 @@
+[
+    {
+        "id": "building-scalable-microservices",
+        "title": "Building Scalable Microservices with Kubernetes",
+        "excerpt": "Learn how we architected a highly scalable microservices platform using Kubernetes and Docker in our recent workshop.",
+        "coverImage": "/images/activities/microservices.jpg",
+        "date": "2024-11-20",
+        "author": "Santhosh R",
+        "tags": [
+            "Cloud",
+            "Kubernetes",
+            "DevOps"
+        ],
+        "content": "In-depth guide on building scalable microservices..."
+    },
+    {
+        "id": "flutter-tips-tricks",
+        "title": "10 Flutter Tips Every Developer Should Know",
+        "excerpt": "Boost your Flutter development productivity with these essential tips and tricks we've learned from building production apps.",
+        "coverImage": "/images/activities/flutter-tips.jpg",
+        "date": "2024-10-15",
+        "author": "Hari Prasad",
+        "tags": [
+            "Flutter",
+            "Mobile",
+            "Android"
+        ],
+        "content": "Essential Flutter development tips..."
+    },
+    {
+        "id": "gdg-devfest-recap",
+        "title": "DevFest 2023 Recap: A Day of Learning and Innovation",
+        "excerpt": "Highlights from DevFest 2023 where over 800 developers came together to learn, network, and innovate.",
+        "coverImage": "/images/activities/devfest-recap.jpg",
+        "date": "2024-09-10",
+        "author": "Subhashree B",
+        "tags": [
+            "Events",
+            "Community",
+            "DevFest"
+        ],
+        "content": "DevFest 2023 was an amazing success..."
+    },
+    {
+        "id": "getting-started-web3",
+        "title": "Getting Started with Web3 Development",
+        "excerpt": "A beginner's guide to understanding blockchain technology and building decentralized applications.",
+        "coverImage": "/images/activities/web3.jpg",
+        "date": "2024-08-05",
+        "author": "Akshay Kumar",
+        "tags": [
+            "Web3",
+            "Blockchain",
+            "DApps"
+        ],
+        "content": "Introduction to Web3 development..."
+    },
+    {
+        "id": "design-systems-101",
+        "title": "Design Systems 101: Creating Consistent UI",
+        "excerpt": "How to build and maintain design systems that scale with your product and team.",
+        "coverImage": "/images/activities/design-systems.jpg",
+        "date": "2024-07-12",
+        "author": "Aishwarya M",
+        "tags": [
+            "Design",
+            "UI/UX",
+            "Frontend"
+        ],
+        "content": "Building effective design systems..."
+    }
+]
