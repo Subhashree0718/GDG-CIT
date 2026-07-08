@@ -49,9 +49,8 @@ const Contact = () => {
     ];
 
     const socialPlatforms = [
-        { name: 'GitHub', url: socialLinks?.github, icon: '🐙', color: 'hover:bg-gray-800' },
-        { name: 'LinkedIn', url: socialLinks?.linkedin, icon: '💼', color: 'hover:bg-blue-600' },
-        { name: 'Instagram', url: socialLinks?.instagram, icon: '📸', color: 'hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500' },
+        { name: 'LinkedIn', url: 'https://www.linkedin.com/company/gdg-on-campus-cit-chennai/posts/?feedView=all', icon: '💼', color: 'hover:bg-blue-600' },
+        { name: 'Instagram', url: 'https://www.instagram.com/gdg.citc/?__pwa=1#', icon: '📸', color: 'hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500' },
         { name: 'Discord', url: socialLinks?.discord, icon: '💬', color: 'hover:bg-indigo-600' }
     ];
 
