@@ -78,15 +78,6 @@ export const EventCard = ({ event, mode = 'compact' }) => {
 
                     {/* Action Buttons */}
                     <div className="flex gap-3 mt-auto">
-                        {event.registerUrl && (
-                            <Button
-                                variant="primary"
-                                href={event.registerUrl}
-                                className="flex-1 text-sm py-3 font-bold"
-                            >
-                                Register Now
-                            </Button>
-                        )}
                         {event.resourcesUrl && (
                             <Button
                                 variant="outline"

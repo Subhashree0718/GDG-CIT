@@ -14,6 +14,34 @@
         "featured": false
     },
     {
+        "id": "from-ground-to-cloud-2025",
+        "title": "From Ground to Cloud: Build Your Cloud Foundation",
+        "date": "2025-12-05",
+        "time": "TBA",
+        "venue": "CIT Campus",
+        "category": "cloud",
+        "summary": "Hands-on workshop to launch your cloud journey with AWS fundamentals and service models.",
+        "details": "Explore cloud computing fundamentals, AWS core services (EC2, S3, VPC, Lambda), career paths, security basics, pricing, and a live S3 static website hosting demo.",
+        "image": "/images/events/cloud-foundation-2025.jpg",
+        "registerUrl": "",
+        "resourcesUrl": "",
+        "featured": false
+    },
+    {
+        "id": "google-techsprint-2026",
+        "title": "Google Techsprint Hackathon - 2026",
+        "date": "2026-01-06",
+        "time": "8:00 AM",
+        "venue": "CIT Campus",
+        "category": "hackathon",
+        "summary": "Join TechSprint 2026 for a hybrid Google hackathon with prizes, premium tools, and a grand finale at CIT.",
+        "details": "Build innovative projects with Google technologies in a hybrid format, compete for prizes and premium memberships, and qualify for an in-person grand finale.",
+        "image": "/images/events/google-techsprint-2026.jpg",
+        "registerUrl": "https://lnkd.in/gVv9QCv3",
+        "resourcesUrl": "",
+        "featured": false
+    },
+    {
         "id": "machine-learning-kickstart",
         "title": "Machine Learning Isn't as Hard as You Think: Kickstart Your ML Journey the Right Way",
         "date": "2025-11-28",

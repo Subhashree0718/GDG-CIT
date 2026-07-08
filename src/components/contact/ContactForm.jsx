@@ -1,6 +1,3 @@
-/**
- * ContactForm Component - Contact form with validation
- */
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '../common/Button';
@@ -43,11 +40,9 @@ export const ContactForm = () => {
         e.preventDefault();
 
         if (validate()) {
-            // Simulate form submission
             console.log('Form submitted:', formData);
             setSubmitted(true);
 
-            // Reset form after 3 seconds
             setTimeout(() => {
                 setFormData({ name: '', email: '', message: '' });
                 setSubmitted(false);
@@ -58,7 +53,6 @@ export const ContactForm = () => {
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData(prev => ({ ...prev, [name]: value }));
-        // Clear error for this field when user starts typing
         if (errors[name]) {
             setErrors(prev => ({ ...prev, [name]: '' }));
         }
@@ -66,6 +60,49 @@ export const ContactForm = () => {
 
     return (
         <Card>
+            {/* Added Official GDG Brand Vector Logo Header */}
+            <div className="flex flex-col items-center justify-center pt-2 pb-6 border-b border-gray-100 mb-6">
+                <div className="relative flex items-center justify-center w-14 h-14 bg-white rounded-full shadow-sm border border-gray-100 overflow-hidden mb-2">
+                    <svg 
+                        viewBox="0 0 24 24" 
+                        className="w-9 h-9"
+                        fill="none" 
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        {/* Blue Bracket (Left) */}
+                        <path 
+                            d="M9.5 4.5L3.5 10.5L9.5 16.5" 
+                            stroke="#4285F4" 
+                            strokeWidth="2.5" 
+                            strokeLinecap="round" 
+                            strokeLinejoin="round"
+                        />
+                        {/* Red Bar (Top Right) */}
+                        <path 
+                            d="M14.5 4.5H20.5" 
+                            stroke="#EA4335" 
+                            strokeWidth="2.5" 
+                            strokeLinecap="round"
+                        />
+                        {/* Yellow Box (Middle Right) */}
+                        <path 
+                            d="M17.5 10.5H20.5" 
+                            stroke="#FBBC04" 
+                            strokeWidth="2.5" 
+                            strokeLinecap="round"
+                        />
+                        {/* Green Bracket (Bottom Right) */}
+                        <path 
+                            d="M14.5 16.5H20.5" 
+                            stroke="#34A853" 
+                            strokeWidth="2.5" 
+                            strokeLinecap="round"
+                        />
+                    </svg>
+                </div>
+                <p className="text-xs font-bold uppercase tracking-wider text-gray-400">GDG CIT Chennai</p>
+            </div>
+
             <form onSubmit={handleSubmit} className="space-y-6">
                 {/* Name field */}
                 <div>
