@@ -29,7 +29,8 @@ const Home = () => {
                 <PulseCounters />
                 <Highlights />
                 {events && <EventTimeline events={events} />}
-                <ActivitiesSlider />
+                {/* Temporarily hidden from website preview */}
+                {/* <ActivitiesSlider /> */}
                 <FAQ />
             </main>
             <Footer />

@@ -16,8 +16,9 @@ const formatDate = (dateString) => {
 };
 
 export const EventTimeline = ({ events = [] }) => {
-    const upcomingEvents = events.filter(e => isFutureDate(e.date));
-    const pastEvents = events.filter(e => !isFutureDate(e.date)).slice(0, 5);
+    const sortedEvents = events.slice().sort((a, b) => b.date.localeCompare(a.date));
+    const upcomingEvents = sortedEvents.filter(e => isFutureDate(e.date));
+    const pastEvents = sortedEvents.filter(e => !isFutureDate(e.date)).slice(0, 5);
 
     const categoryColors = {
         'workshop': '#A855F7',
