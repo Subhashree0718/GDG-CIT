@@ -60,17 +60,19 @@ export const Navbar = () => {
         >
             <div className="container mx-auto px-6 lg:px-12">
                 <div className="flex items-center justify-between h-20">
-                    {/* Logo - Enhanced */}
+                    {/* Logo */}
                     <Link to="/" className="flex items-center group">
                         <motion.div
                             className="flex items-center gap-3"
                             whileHover={{ scale: 1.05 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
-                            {/* Google G Logo Style - Larger */}
-                            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-gdgBlue via-gdgGreen to-gdgYellow flex items-center justify-center shadow-lg">
-                                <span className="text-white font-black text-2xl">G</span>
-                            </div>
+                            {/* FIXED: Using direct absolute path from the public folder */}
+                            <img 
+                                src="/images/gdg-logo.jpg" 
+                                alt="GDG Logo" 
+                                className="w-12 h-12 object-contain"
+                            />
                             <div className="flex flex-col">
                                 <span className="text-2xl font-black tracking-tight bg-gradient-to-r from-gdgBlue to-gdgGreen bg-clip-text text-transparent">
                                     GDG
@@ -97,7 +99,6 @@ export const Navbar = () => {
                                         }`}>
                                         {link.label}
                                     </span>
-                                    {/* Active indicator */}
                                     {isActive(link.path) && (
                                         <motion.div
                                             className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-gdgBlue to-gdgGreen rounded-full"
@@ -105,7 +106,6 @@ export const Navbar = () => {
                                             transition={{ type: "spring", stiffness: 380, damping: 30 }}
                                         />
                                     )}
-                                    {/* Hover effect */}
                                     <motion.div
                                         className="absolute inset-0 bg-gray-50 rounded-lg -z-10 opacity-0 group-hover:opacity-100 transition-opacity"
                                     />
@@ -116,7 +116,6 @@ export const Navbar = () => {
 
                     {/* Right Side - Social Icons + CTA */}
                     <div className="hidden lg:flex items-center gap-4">
-                        {/* Social Icons */}
                         <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 border border-gray-100">
                             {socialIcons.map((social) => social.url && (
                                 <motion.a
@@ -134,7 +133,6 @@ export const Navbar = () => {
                             ))}
                         </div>
 
-                        {/* CTA Button */}
                         <a
                             href="https://docs.google.com/forms/d/1eAviUoX97nlOQmzvBN_T2qYkFVcD8QpDpXoNgW2A1Uc"
                             target="_blank"
@@ -199,7 +197,6 @@ export const Navbar = () => {
                                     </Link>
                                 ))}
 
-                                {/* Mobile Social Icons */}
                                 <div className="flex items-center justify-center gap-4 pt-4 pb-2">
                                     {socialIcons.map((social) => social.url && (
                                         <a

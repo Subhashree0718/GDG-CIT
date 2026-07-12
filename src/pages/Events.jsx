@@ -26,15 +26,20 @@ const Events = () => {
         selectedCategory === 'all' || event.category === selectedCategory
     ) || [];
 
-    // Separate upcoming and past events
-    const upcomingEvents = useMemo(() =>
-        filteredEvents.filter(e => isFutureDate(e.date)),
+    // Sort events newest first by date, then separate upcoming and past events
+    const sortedEvents = useMemo(() =>
+        filteredEvents.slice().sort((a, b) => b.date.localeCompare(a.date)),
         [filteredEvents]
     );
 
+    const upcomingEvents = useMemo(() =>
+        sortedEvents.filter(e => isFutureDate(e.date)),
+        [sortedEvents]
+    );
+
     const pastEvents = useMemo(() =>
-        filteredEvents.filter(e => !isFutureDate(e.date)),
-        [filteredEvents]
+        sortedEvents.filter(e => !isFutureDate(e.date)),
+        [sortedEvents]
     );
 
     // Reset pagination when category changes
